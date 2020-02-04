@@ -26,49 +26,19 @@ public class Restaurant {
 	}
 	
 	
-	public Integer getRestaurantId() {
-		return restaurantId;
-	}
-	public void setRestaurantId(Integer restaurantId) {
-		this.restaurantId = restaurantId;
-	}
-	public String getRestaurantName() {
-		return restaurantName;
-	}
-	public void setRestaurantName(String restaurantName) {
-		this.restaurantName = restaurantName;
-	}
+	
 	public Double getRatings() {
 		return ratings;
 	}
-	public void setRatings(Double ratings) {
-		this.ratings = ratings;
-	}
+	
 	public LocalTime getOpeningTime() {
 		return openingTime;
 	}
-	public void setOpeningTime(LocalTime openingTime) {
-		this.openingTime = openingTime;
-	}
+	
 	public LocalTime getClosingTime() {
 		return closingTime;
 	}
-	public void setClosingTime(LocalTime closingTime) {
-		this.closingTime = closingTime;
-	}
-	public List<Review> getReviews() {
-		return reviews;
-	}
-	public void setReviews(List<Review> reviews) {
-		this.reviews = reviews;
-	}
-	public List<Dishes> getDishes() {
-		return dishes;
-	}
-	public void setDishes(List<Dishes> dishes) {
-		this.dishes = dishes;
-	}
-
+	
 
 	@Override
 	public String toString() {

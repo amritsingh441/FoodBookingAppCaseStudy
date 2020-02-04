@@ -20,27 +20,7 @@ public class Dishes {
 	public Integer getRestaurantId() {
 		return restaurantId;
 	}
-	public void setRestaurantId(Integer restaurantId) {
-		this.restaurantId = restaurantId;
-	}
-	public String getDishName() {
-		return dishName;
-	}
-	public void setDishName(String dishName) {
-		this.dishName = dishName;
-	}
-	public Integer getPrice() {
-		return price;
-	}
-	public void setPrice(Integer price) {
-		this.price = price;
-	}
-	public Integer getDiscount() {
-		return discount;
-	}
-	public void setDiscount(Integer discount) {
-		this.discount = discount;
-	}
+	
 	
 	@Override
 	public String toString() {

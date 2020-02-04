@@ -15,15 +15,7 @@ public class Review {
 	public Integer getRestaurantId() {
 		return restaurantId;
 	}
-	public void setRestaurantId(Integer restaurantId) {
-		this.restaurantId = restaurantId;
-	}
-	public String getReviews() {
-		return reviews;
-	}
-	public void setReviews(String reviews) {
-		this.reviews = reviews;
-	}
+	
 
 	@Override
 	public String toString() {
