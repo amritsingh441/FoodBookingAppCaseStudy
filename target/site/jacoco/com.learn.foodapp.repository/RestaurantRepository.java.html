@@ -22,7 +22,7 @@ import com.learn.foodapp.model.Review;
 	private static final String RESTAURANT_FILE_NAME = &quot;Restaurant.txt&quot;;
 	private static final String REVIEW_FILE_NAME = &quot;Review.txt&quot;;
 	private static final String DISHES_FILE_NAME = &quot;Dishes.txt&quot;;
-	private static final String FILE_PATH = &quot;src/data&quot;;
+<span class="fc" id="L25">	private static final String FILE_PATH = &quot;src/data&quot;;</span>
 	
 	public List&lt;Restaurant&gt; getAllRestaurant(){
 <span class="fc" id="L28">		return getRestaurantFileData();</span>
@@ -52,7 +52,7 @@ import com.learn.foodapp.model.Review;
 <span class="fc" id="L52">			logger.debug(&quot;End of try block in getAllRestaurant method&quot;);</span>
 <span class="nc" id="L53">		} catch (IOException e) {</span>
 <span class="nc" id="L54">			logger.debug(e.getMessage());</span>
-<span class="fc" id="L55">		}</span>
+		}
 <span class="fc" id="L56">		return restaurantList;</span>
 	}
 
@@ -69,7 +69,7 @@ import com.learn.foodapp.model.Review;
 <span class="fc" id="L69">			logger.debug(&quot;End of try block in getReviewFileData method&quot;);</span>
 <span class="nc" id="L70">		} catch (IOException e) {</span>
 <span class="nc" id="L71">			logger.debug(e.getMessage());</span>
-<span class="fc" id="L72">		}</span>
+		}
 <span class="fc" id="L73">		return reviewList;</span>
 
 	}
@@ -85,7 +85,7 @@ import com.learn.foodapp.model.Review;
 <span class="fc" id="L85">			logger.debug(&quot;End of try block in getDishesFileData method&quot;);</span>
 <span class="nc" id="L86">		} catch (IOException e) {</span>
 <span class="nc" id="L87">			logger.debug(e.getMessage());</span>
-<span class="fc" id="L88">		}</span>
+		}
 <span class="fc" id="L89">		return dishesList;</span>
 
 	}
@@ -100,7 +100,7 @@ import com.learn.foodapp.model.Review;
 <span class="nc" id="L100">		}catch(IOException ioe) {</span>
 <span class="nc" id="L101">			logger.debug(ioe.getMessage());</span>
 			
-<span class="fc" id="L103">		}</span>
+		}
 		
 <span class="fc" id="L105">	}</span>
 
