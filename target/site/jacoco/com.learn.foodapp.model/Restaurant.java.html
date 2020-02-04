@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Restaurant.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Food booking app case study boilerplate</a> &gt; <a href="index.source.html" class="el_package">com.learn.foodapp.model</a> &gt; <span class="el_source">Restaurant.java</span></div><h1>Restaurant.java</h1><pre class="source lang-java linenums">package com.learn.foodapp.model;
+
+import java.time.LocalTime;
+import java.util.List;
+
+public class Restaurant {
+	
+	private Integer restaurantId;
+	private String restaurantName;
+	private Double ratings;
+	private LocalTime openingTime;
+	private LocalTime closingTime;
+	private List&lt;Review&gt; reviews;
+	private List&lt;Dishes&gt; dishes;
+	
+	public Restaurant(Integer restaurantId, String restaurantName, Double ratings, LocalTime openingTime,
+			LocalTime closingTime, List&lt;Review&gt; reviews, List&lt;Dishes&gt; dishes) {
+<span class="fc" id="L18">		super();</span>
+<span class="fc" id="L19">		this.restaurantId = restaurantId;</span>
+<span class="fc" id="L20">		this.restaurantName = restaurantName;</span>
+<span class="fc" id="L21">		this.ratings = ratings;</span>
+<span class="fc" id="L22">		this.openingTime = openingTime;</span>
+<span class="fc" id="L23">		this.closingTime = closingTime;</span>
+<span class="fc" id="L24">		this.reviews = reviews;</span>
+<span class="fc" id="L25">		this.dishes = dishes;</span>
+<span class="fc" id="L26">	}</span>
+	
+	
+	public Integer getRestaurantId() {
+<span class="nc" id="L30">		return restaurantId;</span>
+	}
+	public void setRestaurantId(Integer restaurantId) {
+<span class="nc" id="L33">		this.restaurantId = restaurantId;</span>
+<span class="nc" id="L34">	}</span>
+	public String getRestaurantName() {
+<span class="nc" id="L36">		return restaurantName;</span>
+	}
+	public void setRestaurantName(String restaurantName) {
+<span class="nc" id="L39">		this.restaurantName = restaurantName;</span>
+<span class="nc" id="L40">	}</span>
+	public Double getRatings() {
+<span class="fc" id="L42">		return ratings;</span>
+	}
+	public void setRatings(Double ratings) {
+<span class="nc" id="L45">		this.ratings = ratings;</span>
+<span class="nc" id="L46">	}</span>
+	public LocalTime getOpeningTime() {
+<span class="fc" id="L48">		return openingTime;</span>
+	}
+	public void setOpeningTime(LocalTime openingTime) {
+<span class="nc" id="L51">		this.openingTime = openingTime;</span>
+<span class="nc" id="L52">	}</span>
+	public LocalTime getClosingTime() {
+<span class="fc" id="L54">		return closingTime;</span>
+	}
+	public void setClosingTime(LocalTime closingTime) {
+<span class="nc" id="L57">		this.closingTime = closingTime;</span>
+<span class="nc" id="L58">	}</span>
+	public List&lt;Review&gt; getReviews() {
+<span class="nc" id="L60">		return reviews;</span>
+	}
+	public void setReviews(List&lt;Review&gt; reviews) {
+<span class="nc" id="L63">		this.reviews = reviews;</span>
+<span class="nc" id="L64">	}</span>
+	public List&lt;Dishes&gt; getDishes() {
+<span class="nc" id="L66">		return dishes;</span>
+	}
+	public void setDishes(List&lt;Dishes&gt; dishes) {
+<span class="nc" id="L69">		this.dishes = dishes;</span>
+<span class="nc" id="L70">	}</span>
+
+
+	@Override
+	public String toString() {
+<span class="fc" id="L75">		return &quot;Restaurant [restaurantId=&quot; + restaurantId + &quot;, restaurantName=&quot; + restaurantName + &quot;, ratings=&quot;</span>
+				+ ratings + &quot;, openingTime=&quot; + openingTime + &quot;, closingTime=&quot; + closingTime + &quot;, reviews=&quot; + reviews
+				+ &quot;, dishes=&quot; + dishes + &quot;]&quot;;
+	}
+	
+	
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

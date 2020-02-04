@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RestaurantService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Food booking app case study boilerplate</a> &gt; <a href="index.source.html" class="el_package">com.learn.foodapp.service</a> &gt; <span class="el_source">RestaurantService.java</span></div><h1>RestaurantService.java</h1><pre class="source lang-java linenums">package com.learn.foodapp.service;
+
+import java.util.List;
+
+import com.learn.foodapp.model.Restaurant;
+import com.learn.foodapp.repository.RestaurantRepository;
+
+
+<span class="fc" id="L9">public class RestaurantService {</span>
+
+	private static final String ALL_RESTAURANT_OUTPUT_FILE = &quot;AllRestaurant.txt&quot;;
+	private static final String ALL_RESTAURANT_RATING_BASED_OUTPUT_FILE = &quot;AllRestaurantBasedOnRatings.txt&quot;;
+	private static final String ALL_RESTAURANT_TIME_BASED_OUTPUT_FILE = &quot;AllRestaurantBasedOnOpeningAndClosingTime.txt&quot;;
+<span class="fc" id="L14">	private RestaurantRepository repository = new RestaurantRepository();</span>
+	
+	public List&lt;Restaurant&gt; getAllRestaurant(){
+<span class="fc" id="L17">		List&lt;Restaurant&gt; resList = repository.getAllRestaurant();</span>
+<span class="fc" id="L18">		repository.writeData(resList.stream().map(Restaurant::toString).reduce(&quot;&quot;, String :: concat), ALL_RESTAURANT_OUTPUT_FILE);</span>
+<span class="fc" id="L19">		return resList;</span>
+	}
+	
+	public List&lt;Restaurant&gt; getAllRestaurantBasedOnRatings(){
+<span class="fc" id="L23">		List&lt;Restaurant&gt; resList = repository.getAllRestaurantBasedOnRatings();</span>
+<span class="fc" id="L24">		repository.writeData(resList.stream().map(Restaurant::toString).reduce(&quot;&quot;, String :: concat), ALL_RESTAURANT_RATING_BASED_OUTPUT_FILE);</span>
+<span class="fc" id="L25">		return resList;</span>
+	}
+	public List&lt;Restaurant&gt; getAllRestaurantBasedOnOpeningAndClosingTime(){
+<span class="fc" id="L28">		List&lt;Restaurant&gt; resList = repository.getAllRestaurantBasedOnOpeningAndClosingTime();</span>
+<span class="fc" id="L29">		repository.writeData(resList.stream().map(Restaurant::toString).reduce(&quot;&quot;, String :: concat), ALL_RESTAURANT_TIME_BASED_OUTPUT_FILE);</span>
+<span class="fc" id="L30">		return resList;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

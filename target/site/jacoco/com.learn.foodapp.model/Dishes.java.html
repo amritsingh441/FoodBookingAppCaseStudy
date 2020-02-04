@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Dishes.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Food booking app case study boilerplate</a> &gt; <a href="index.source.html" class="el_package">com.learn.foodapp.model</a> &gt; <span class="el_source">Dishes.java</span></div><h1>Dishes.java</h1><pre class="source lang-java linenums">package com.learn.foodapp.model;
+
+public class Dishes {
+	
+	private Integer restaurantId;
+	private String dishName;
+	private Integer price;
+	private Integer discount;
+	
+	
+	public Dishes(Integer restaurantId, String dishName, Integer price, Integer discount) {
+<span class="fc" id="L12">		super();</span>
+<span class="fc" id="L13">		this.restaurantId = restaurantId;</span>
+<span class="fc" id="L14">		this.dishName = dishName;</span>
+<span class="fc" id="L15">		this.price = price;</span>
+<span class="fc" id="L16">		this.discount = discount;</span>
+<span class="fc" id="L17">	}</span>
+	
+	
+	public Integer getRestaurantId() {
+<span class="fc" id="L21">		return restaurantId;</span>
+	}
+	public void setRestaurantId(Integer restaurantId) {
+<span class="nc" id="L24">		this.restaurantId = restaurantId;</span>
+<span class="nc" id="L25">	}</span>
+	public String getDishName() {
+<span class="nc" id="L27">		return dishName;</span>
+	}
+	public void setDishName(String dishName) {
+<span class="nc" id="L30">		this.dishName = dishName;</span>
+<span class="nc" id="L31">	}</span>
+	public Integer getPrice() {
+<span class="nc" id="L33">		return price;</span>
+	}
+	public void setPrice(Integer price) {
+<span class="nc" id="L36">		this.price = price;</span>
+<span class="nc" id="L37">	}</span>
+	public Integer getDiscount() {
+<span class="nc" id="L39">		return discount;</span>
+	}
+	public void setDiscount(Integer discount) {
+<span class="nc" id="L42">		this.discount = discount;</span>
+<span class="nc" id="L43">	}</span>
+	
+	@Override
+	public String toString() {
+<span class="fc" id="L47">		return &quot;Dishes [restaurantId=&quot; + restaurantId + &quot;, dishName=&quot; + dishName + &quot;, price=&quot; + price + &quot;, discount=&quot;</span>
+				+ discount + &quot;]&quot;;
+	}
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
